@@ -1,0 +1,14 @@
+.question-row {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-of-type) {
+        margin-bottom: $small-spacing;
+    }
+}
+
+.question-text {
+    flex: 1;
+    display: block;
+    font-size: modular-scale(2);
+}

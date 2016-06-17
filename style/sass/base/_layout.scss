@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.main-wrapper {
+    width: 95%;
+    max-width: 860px;
+    margin: auto;
+}
+
+main {
+    margin-top: $base-spacing !important;
+    margin-bottom: $base-spacing !important;
+}
+
+.page-section {
+    margin-bottom: $base-spacing;
+}
