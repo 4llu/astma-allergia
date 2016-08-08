@@ -1,4 +1,9 @@
-.question-row {
+.questions__submit-wrapper {
+    margin: $base-spacing * 2 0 $base-spacing;
+    text-align: right;
+}
+
+.question {
     display: flex;
     align-items: center;
 
@@ -7,7 +12,7 @@
     }
 }
 
-.question-text {
+.question__text {
     flex: 1;
     display: block;
     font-size: modular-scale(2);
