@@ -13,14 +13,17 @@ body {
 }
 
 .main-wrapper {
-    width: 95%;
-    max-width: 860px;
+    width: $content-width;
+    max-width: $content-max-width;
     margin: auto;
 }
 
 .main-block {
-    margin-top: $base-spacing !important;
-    margin-bottom: $base-spacing !important;
+    @media all and (max-width: $xl-screen - 1px) {
+        margin-top: $menu-icon-bar-height;
+    }
+    margin-top: $base-spacing;
+    margin-bottom: $base-spacing;
 }
 
 .page-section {

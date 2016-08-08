@@ -1,6 +1,11 @@
 // Breakpoints
 $medium-screen: 600px;
 $large-screen: 900px;
+$xl-screen: 1050px;
+
+// Layout
+$content-width: 95%;
+$content-max-width: 860px;
 
 // Typography
 $base-font-family: $font-stack-system;
@@ -19,6 +24,10 @@ $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
+// Layout
+$menu-icon-size: 50px;
+$menu-icon-bar-height: calc(#{$menu-icon-size} + #{$small-spacing});
+
 // Colors
 // $blue: #1565c0;
 $blue: #2AA1C0;
@@ -27,6 +36,9 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $broken-white: #fafafa;
+
+// Colors semantic
+$background-color: $broken-white;
 
 // Font Colors
 $base-font-color: $dark-gray;
