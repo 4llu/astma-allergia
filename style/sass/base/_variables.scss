@@ -3,10 +3,6 @@ $medium-screen: 600px;
 $large-screen: 900px;
 $xl-screen: 1050px;
 
-// Layout
-$content-width: 95%;
-$content-max-width: 860px;
-
 // Typography
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
@@ -25,8 +21,10 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Layout
+$content-width: 95%;
+$content-max-width: 860px;
 $menu-icon-size: 50px;
-$menu-icon-bar-height: calc(#{$menu-icon-size} + #{$small-spacing});
+$menu-icon-bar-height: calc(#{$menu-icon-size} + #{$small-spacing} * 2);
 
 // Colors
 // $blue: #1565c0;

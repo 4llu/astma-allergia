@@ -19,7 +19,6 @@
     @media all and (min-width: $xl-screen) {
         left: $base-spacing;
         top: $base-spacing;
-        background-color: transparent;
     }
 
     @include size($menu-icon-size);

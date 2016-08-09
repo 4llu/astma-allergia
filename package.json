@@ -23,5 +23,8 @@
     "gulp-sass": "^2.3.2",
     "node-bourbon": "^4.2.8",
     "node-neat": "^1.7.2"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
   }
 }
