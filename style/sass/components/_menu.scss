@@ -2,8 +2,12 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: $menu-icon-bar-height;
+    height: $menu-icon-bar-height-small;
     background-color: rgba($background-color, .9);
+
+    @media all and (min-width: $ml-screen) {
+        height: $menu-icon-bar-height;
+    }
 
     @media all and (min-width: $xl-screen) {
         background-color: transparent;
@@ -15,16 +19,21 @@
     left: $small-spacing; // Fallback
     left: calc((100% - #{$content-width}) / 2);
     top: $small-spacing;
+    @include size($menu-icon-size-small);
+
+    @media all and (min-width: $ml-screen) {
+        @include size($menu-icon-size);
+    }
 
     @media all and (min-width: $xl-screen) {
         left: $base-spacing;
         top: $base-spacing;
     }
 
-    @include size($menu-icon-size);
     border: 1px solid $dark-gray;
     border-radius: 50%;
     transition: opacity $base-duration $base-timing;
+
     &:hover {
         opacity: 0.7;
         cursor: pointer;

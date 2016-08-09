@@ -1,5 +1,6 @@
 // Breakpoints
 $medium-screen: 600px;
+$ml-screen: 750px;
 $large-screen: 900px;
 $xl-screen: 1050px;
 
@@ -24,7 +25,9 @@ $base-z-index: 0;
 $content-width: 95%;
 $content-max-width: 860px;
 $menu-icon-size: 50px;
+$menu-icon-size-small: 40px;
 $menu-icon-bar-height: calc(#{$menu-icon-size} + #{$small-spacing} * 2);
+$menu-icon-bar-height-small: calc(#{$menu-icon-size-small} + #{$small-spacing} * 2);
 
 // Colors
 // $blue: #1565c0;

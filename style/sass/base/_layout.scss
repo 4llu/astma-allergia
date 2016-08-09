@@ -19,11 +19,16 @@ body {
 }
 
 .main-block {
-    @media all and (max-width: $xl-screen - 1px) {
+    margin-bottom: $base-spacing;
+    margin-top: $menu-icon-bar-height-small;
+
+    @media all and (min-width: $ml-screen) {
         margin-top: $menu-icon-bar-height;
     }
-    margin-top: $base-spacing;
-    margin-bottom: $base-spacing;
+
+    @media all and (min-width: $xl-screen) {
+        margin-top: $base-spacing;
+    }
 }
 
 .page-section {
