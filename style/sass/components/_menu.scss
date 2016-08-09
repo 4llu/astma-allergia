@@ -73,6 +73,15 @@
     border-bottom: 1px solid shade($dark-gray, 50%);
     color: $light-gray;
     transition: $base-duration/2 $base-timing;
+    font-size: 130%;
+
+    @media all and (min-width: $medium-screen) {
+        font-size: 125%;
+    }
+
+    @media all and (min-width: $large-screen) {
+        font-size: 100%;
+    }
 
     &:focus {
         background-color: $blue;
