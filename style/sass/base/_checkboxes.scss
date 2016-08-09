@@ -1,3 +1,7 @@
+.choice {
+    display: flex;
+}
+
 .choice__input:not(:checked),
 .choice__input:checked {
     z-index: -1;
@@ -10,8 +14,16 @@
 .choice__input:not(:checked) + label,
 .choice__input:checked + label {
     $checkbox-side: 35px;
-    width: $checkbox-side;
-    height: $checkbox-side;
+    $checkbox-side-small: 25px;
+
+    width: $checkbox-side-small;
+    height: $checkbox-side-small;
+
+    @media all and (min-width: $ml-screen) {
+        width: $checkbox-side;
+        height: $checkbox-side;
+    }
+
     margin: 0;
     margin-left: $base-spacing;
     transition: 0.04s;
