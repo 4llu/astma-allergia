@@ -1,0 +1,16 @@
+.page-footer {
+    padding-bottom: $base-spacing;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.footer__image {
+    width: 50%;
+    max-width: 200px;
+}

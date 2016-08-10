@@ -18,13 +18,18 @@ h6 {
 }
 
 h1 {
+    margin-bottom: 0;
     font-size: modular-scale(4);
-    padding-bottom: .5rem;
-    border-bottom: 1px solid $dark-gray;
 }
 
 h2 {
     font-size: modular-scale(3);
+}
+
+.subtitle {
+    display: block;
+    font-size: modular-scale(1);
+    color: tint($base-font-color, 30%);
 }
 
 p {
