@@ -8,9 +8,11 @@
     align-items: center;
 }
 
-
+.footer__links {
+    font-size: modular-scale(1);
+}
 
 .footer__image {
-    width: 50%;
+    width: 30%;
     max-width: 200px;
 }
