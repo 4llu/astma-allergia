@@ -1,0 +1,32 @@
+.login-page {
+    background-color: $background-color-darker;
+}
+
+.login-main {
+    margin-top: 15vh;
+}
+
+.login__title {
+    font-size: modular-scale(2);
+    margin-bottom: $small-spacing;
+}
+
+.login {
+    padding: $base-spacing;
+    background-color: #fff;
+    border-radius: $base-border-radius;
+}
+
+.login__remember-me {
+    margin-bottom: $base-spacing;
+    font-weight: normal;
+}
+
+.login__submit {
+    width: 100%;
+    text-align: center; // FIXME Only necessary for mockup link
+
+    @media all and (min-width: $large-screen) {
+        width: initial;
+    }
+}

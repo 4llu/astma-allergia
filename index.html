@@ -11,7 +11,7 @@
         <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/menu.js"></script>
     </head>
-    <body>
+    <body class="info-page">
         <div class="menu__icon-bar">
             <div class="menu__icon-wrapper js-menu-trigger">
                 <img class="menu__icon" src="images/menu.svg" alt="Menu" />
@@ -59,7 +59,14 @@
                 </header>
                 <form class="questions">
                     <section class="page-section">
-                        <h2>Tunnista paheneminen</h2>
+                        <h2 class="u-no-bottom-margin">Tunnista paheneminen</h2>
+                        <div class="questions__answer-labels">
+                            <div class="questions__answer-labels-wrapper">
+                                <div class="">k</div>
+                                <div class="">/</div>
+                                <div class="">e</div>
+                            </div>
+                        </div>
                         <ul>
                             <li class="question">
                                 <span class="question__text">Lapsi on flunssainen, yskii, yöyskää</span>
@@ -73,7 +80,7 @@
                                 </div>
                             </li>
                             <li class="question">
-                                <span class="question__text">Avaavan lääkkeen tarve lisääntyy, usein jo ensimmäisenä flunssapäivänä</span>
+                                <span class="question__text">Avaavan lääkkeen tarve lisääntyy (usein jo ensimmäisenä flunssapäivänä)</span>
                                 <div class="choice">
                                     <input type="radio" class="choice__input" id="question-2Y" name="question-2">
                                     <label class="choice__box" for="question-2Y"></label>
@@ -84,7 +91,7 @@
                                 </div>
                             </li>
                             <li class="question">
-                                <span class="question__text">Rasituksensieto huononee, yskää leikkiessä tai itkiessä</span>
+                                <span class="question__text">Rasituksensieto huononee, lapsi yskii leikkiessä tai itkiessä</span>
                                 <div class="choice">
                                     <input type="radio" class="choice__input" id="question-3Y" name="question-3">
                                     <label class="choice__box" for="question-3Y"></label>
@@ -94,53 +101,40 @@
                                     <label class="choice__box" for="question-3N"></label>
                                 </div>
                             </li>
+                            <div class="questions__additional-info">
+                                Jos yksikin kohta on punaisella, siirry kohtaan ”Estä pahaneminen”
+                            </div>
                         </ul>
                     </section>
                     <section class="page-section">
                         <h2>Estä paheneminen</h2>
                         <ul>
                             <li class="question">
-                                <span class="question__text"> Käytä avaavaa lääkettä riittävästi (ks. ohje kääntöpuolella)</span>
+                                <span class="question__text"> Käytä avaavaa lääkettä riittävästi (ks. ohje alla)</span>
                                 <div class="choice">
-                                    <input type="radio" class="choice__input" id="question-4Y" name="question-4">
+                                    <input type="checkbox" class="choice__input" id="question-4Y" name="question-4">
                                     <label class="choice__box" for="question-4Y"></label>
                                 </div>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input choice__input--no" id="question-4N" name="question-4">
-                                    <label class="choice__box" for="question-4N"></label>
-                                </div>
                             </li>
                             <li class="question">
-                                <span class="question__text">Aloita inhaloitava kortisoni tai kaksinkertaista sen annos vähintään viikoksi</span>
+                                <span class="question__text">Aloita inhaloitava kortisoni tai kaksinkertaista käytössä olevan kortisonin annos vähintään viikoksi</span>
                                 <div class="choice">
-                                    <input type="radio" class="choice__input" id="question-5Y" name="question-5">
+                                    <input type="checkbox" class="choice__input" id="question-5Y" name="question-5">
                                     <label class="choice__box" for="question-5Y"></label>
                                 </div>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input choice__input--no" id="question-5N" name="question-5">
-                                    <label class="choice__box" for="question-5N"></label>
-                                </div>
                             </li>
                             <li class="question">
-                                <span class="question__text">Hakeudu päivystykseen, jos kotilääkitys ei auta. Pikkulapsi väsähtää, jos henkeä ahdistaa</span>
+                                <span class="question__text">Hakeudu lääkärille/hoitajalle/päivystykseen, jos kotilääkitys ei auta. On huolestuttavaa, jos pikkulapsen henkeä ahdistaa ja hän väsähtää.</span>
                                 <div class="choice">
-                                    <input type="radio" class="choice__input" id="question-6Y" name="question-6">
+                                    <input type="checkbox" class="choice__input" id="question-6Y" name="question-6">
                                     <label class="choice__box" for="question-6Y"></label>
                                 </div>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input choice__input--no" id="question-6N" name="question-6">
-                                    <label class="choice__box" for="question-6N"></label>
-                                </div>
                             </li>
                             <li class="question">
-                                <span class="question__text">Tarkista astman perushoidon riittävyys pahenemisvaiheen jälkeen</span>
+                                <span class="question__text">Pahenemisvaiheen jälkeen on tarkistettava lääkärin tai hoitajan kanssa astman perushoidon riittävyys</span>
                                 <div class="choice">
-                                    <input type="radio" class="choice__input" id="question-7Y" name="question-7">
+                                    <input type="checkbox" class="choice__input" id="question-7Y" name="question-7">
                                     <label class="choice__box" for="question-7Y"></label>
-                                </div>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input choice__input--no" id="question-7N" name="question-7">
-                                    <label class="choice__box" for="question-7N"></label>
                                 </div>
                             </li>
                         </ul>
@@ -170,7 +164,7 @@
                 <section class="page-section">
                     <h2>Astmakohtauksen hoito</h2>
                     <p>
-                        Anna tilanjatkeella (alle 3-vuotiaalla maskin kanssa) SALBUTAMOLIsumutinta
+                        Anna tilanjatkeella (alle 3-vuotiaalla maskin kanssa) SALBUTAMOLI sumutinta
                         (0.1 mg) yksi suihke ja anna lapsen hengittää vähintään
                         viisi kertaa edestakaisin tai 15 sekuntia. Toista sama annos
                         välittömästi.
@@ -198,7 +192,7 @@
                     <div>Lisätietoa:</div>
                     <a href="http://www.terveyskirjasto.fi/terveyskirjasto/tk.koti?p_artikkeli=dlk00009" target="_blank">Duodecim terveyskirjasto - astma</a>
                 </div>
-                <img class="footer__image" src="images/allergiaohjelma-logo.jpg" alt="Allergiaohjelman logo" />
+                <img class="footer__image" src="images/allergiaohjelma-logo-tp.png" alt="Allergiaohjelman logo" />
             </div>
         </footer>
     </body>

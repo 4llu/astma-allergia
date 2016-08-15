@@ -18,6 +18,10 @@ body {
     margin: auto;
 }
 
+.main-wrapper--narrow {
+    max-width: $content-max-width / 2;
+}
+
 .main-block {
     margin-bottom: $base-spacing;
     margin-top: $menu-icon-bar-height-small;

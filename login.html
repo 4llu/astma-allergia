@@ -7,7 +7,25 @@
 
         <link rel="stylesheet" href="/style/master.css">
     </head>
-    <body>
-
+    <body class="login-page">
+        <main class="main-block login-main">
+            <div class="main-wrapper main-wrapper--narrow">
+                <div class="login">
+                    <h1 class="login__title">STOP Allergian ja astman oireet</h1>
+                    <form class="login__form" action="index.html" method="post">
+                        <label for="name">Sähköposti</label>
+                        <input type="text" name="name" id="name">
+                        <label for="password">Salasana</label>
+                        <input type="passwd" name="password" id="password">
+                        <label class="login__remember-me" for="remember-me">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <span>Muista minut</span>
+                        </label>
+                        <!-- <input type="submit" class="login__submit" value="Kirjaudu sisään"> -->
+                        <a class="button login__submit" href="/">Kirjaudu sisään</a>
+                    </form>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

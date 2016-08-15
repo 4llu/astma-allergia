@@ -40,6 +40,7 @@ $broken-white: #fafafa;
 
 // Colors semantic
 $background-color: $broken-white;
+$background-color-darker: #eee;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -60,3 +61,7 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Checkboxes
+$checkbox-side: 35px;
+$checkbox-side-small: 25px;

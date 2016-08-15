@@ -1,3 +1,20 @@
+.questions__answer-labels {
+    @include clearfix;
+}
+
+.questions__answer-labels-wrapper {
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    width: calc(#{$checkbox-side} * 2 + #{$base-spacing});
+}
+
+.questions__additional-info {
+    position: relative;
+    top: $small-spacing;
+    text-align: right;
+}
+
 .questions__submit-wrapper {
     margin: $base-spacing * 2 0 $base-spacing;
     text-align: right;

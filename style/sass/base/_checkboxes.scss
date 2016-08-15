@@ -13,9 +13,6 @@
 
 .choice__input:not(:checked) + label,
 .choice__input:checked + label {
-    $checkbox-side: 35px;
-    $checkbox-side-small: 25px;
-
     width: $checkbox-side-small;
     height: $checkbox-side-small;
 

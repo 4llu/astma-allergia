@@ -1,11 +1,10 @@
 body {
-    background-color: $background-color;
     font-size: 65%;
 
     @media all and (min-width: $medium-screen) {
         font-size: 80%;
     }
-    
+
     @media all and (min-width: $large-screen) {
         font-size: 100%;
     }

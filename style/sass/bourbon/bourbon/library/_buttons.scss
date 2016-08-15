@@ -48,6 +48,7 @@
 /// @require {function} _assign-inputs
 
 $buttons-list: (
+  ".button",
   "button",
   "[type='button']",
   "[type='reset']",
