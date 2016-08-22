@@ -1,0 +1,34 @@
+.page-heading-accent {
+    $border-width: 6px;
+    $color: tint($blue, 15%);
+
+    display: inline-block;
+    transform: translate(-5px, 0) rotate(45deg);
+    @include size(1.5rem);
+    border-right: $border-width solid $color;
+    border-top: $border-width solid $color;
+}
+
+.heading-accent {
+    $size: 1.2rem;
+    $overlap: 4px;
+    $border-width: 5px;
+
+    position: relative;
+    top: calc(#{$size} - #{$overlap});
+    display: inline-block;
+    width: $size;
+    height: $size;
+    margin-right: -$overlap - 10px;
+    border-left: $border-width solid $light-green;
+    border-bottom: $border-width solid $light-green;
+}
+
+.content-change {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin: $base-spacing auto;
+    font-size: 1rem;
+    color: $light-green;
+}

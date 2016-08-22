@@ -36,5 +36,7 @@ body {
 }
 
 .page-section {
-    margin-bottom: $base-spacing;
+    &:not(:last-of-type) {
+        margin-bottom: $base-spacing;
+    }
 }

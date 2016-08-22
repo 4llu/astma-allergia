@@ -32,6 +32,8 @@ $menu-icon-bar-height-small: calc(#{$menu-icon-size-small} + #{$small-spacing} *
 // Colors
 // $blue: #1565c0;
 $blue: #2AA1C0;
+$green: #4cc166;
+$light-green: #72D688;
 $red: #e74c3c;
 $dark-gray: #333;
 $medium-gray: #999;
@@ -41,6 +43,9 @@ $broken-white: #fafafa;
 // Colors semantic
 $background-color: $broken-white;
 $background-color-darker: #eee;
+$checkbox-color-d: $light-gray; // default
+$checkbox-color-p: $green; // positive
+$checkbox-color-n: $red; // negative
 
 // Font Colors
 $base-font-color: $dark-gray;

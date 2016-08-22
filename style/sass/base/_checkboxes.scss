@@ -27,28 +27,29 @@
 }
 
 .choice__input:not(:checked) + label {
-    background-color: $light-gray;
+    background-color: $checkbox-color-d;
 }
 
 .choice__input:not(:checked) + label:hover {
     background-color: $medium-gray;
+    background-color: shade($checkbox-color-d, 30%);
     cursor: pointer;
 }
 
 .choice__input:checked + label {
-    background-color: $blue;
+    background-color: $checkbox-color-p;
 }
 
 .choice__input--no:checked + label {
-    background-color: $red;
+    background-color: $checkbox-color-n;
 }
 
 .choice__input:checked + label:hover {
-    background-color: shade($blue, 30%);
+    background-color: shade($checkbox-color-p, 30%);
     cursor: pointer;
 }
 
 .choice__input--no:checked + label:hover {
-    background-color: shade($red, 30%);
+    background-color: shade($checkbox-color-n, 30%);
     cursor: pointer;
 }

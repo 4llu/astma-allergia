@@ -1,12 +1,12 @@
-.questions__answer-labels {
+.questions__answer-label {
     @include clearfix;
 }
 
-.questions__answer-labels-wrapper {
+.questions__answer-label-wrapper {
     float: right;
     display: flex;
     justify-content: space-around;
-    width: calc(#{$checkbox-side} * 2 + #{$base-spacing});
+    width: $checkbox-side;
 }
 
 .questions__additional-info {
@@ -16,7 +16,7 @@
 }
 
 .questions__submit-wrapper {
-    margin: $base-spacing * 2 0 $base-spacing;
+    margin-top: $base-spacing * 2;
     text-align: right;
 }
 

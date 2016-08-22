@@ -3,197 +3,29 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Astma lapset</title>
+        <title>Login | STOP astman ja allergian oireet</title>
 
         <link rel="stylesheet" href="style/master.css">
-        <!-- VENDOR -->
-        <!-- <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script> -->
-        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/menu.js"></script>
     </head>
-    <body class="info-page">
-        <div class="menu__icon-bar">
-            <div class="menu__icon-wrapper js-menu-trigger">
-                <img class="menu__icon" src="images/menu.svg" alt="Menu" />
-            </div>
-        </div>
-        <nav class="js-menu menu__content">
-            <ul>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Aikuisen astmaoireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Aikuisen allergisen nuhan oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Aikuisen allergisen konjunktiviitin oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Pikkulapsen astmaoireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Aikuisen atooppisen ihottuman oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Lapsen atooppisen ihottuman oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Urtikarian oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Käsi ihottuman oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="javascript:void(0)">Anafylaksian oireet</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="js-menu-screen menu__fade-screen">
-
-        </div>
-        <main class="main-block">
-            <div class="main-wrapper">
-                <header class="page-header">
-                    <h1>STOP pikkulapsen astmaoireet</h1>
-                    <span class="subtitle">Ohje vanhemmille</span>
-                </header>
-                <form class="questions">
-                    <section class="page-section">
-                        <h2 class="u-no-bottom-margin">Tunnista paheneminen</h2>
-                        <div class="questions__answer-labels">
-                            <div class="questions__answer-labels-wrapper">
-                                <div class="">k</div>
-                                <div class="">/</div>
-                                <div class="">e</div>
-                            </div>
-                        </div>
-                        <ul>
-                            <li class="question">
-                                <span class="question__text">Lapsi on flunssainen, yskii, yöyskää</span>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input" id="question-1Y" name="question-1">
-                                    <label class="choice__box" for="question-1Y"></label>
-                                </div>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input choice__input--no" id="question-1N" name="question-1">
-                                    <label class="choice__box" for="question-1N"></label>
-                                </div>
-                            </li>
-                            <li class="question">
-                                <span class="question__text">Avaavan lääkkeen tarve lisääntyy (usein jo ensimmäisenä flunssapäivänä)</span>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input" id="question-2Y" name="question-2">
-                                    <label class="choice__box" for="question-2Y"></label>
-                                </div>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input choice__input--no" id="question-2N" name="question-2">
-                                    <label class="choice__box" for="question-2N"></label>
-                                </div>
-                            </li>
-                            <li class="question">
-                                <span class="question__text">Rasituksensieto huononee, lapsi yskii leikkiessä tai itkiessä</span>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input" id="question-3Y" name="question-3">
-                                    <label class="choice__box" for="question-3Y"></label>
-                                </div>
-                                <div class="choice">
-                                    <input type="radio" class="choice__input choice__input--no" id="question-3N" name="question-3">
-                                    <label class="choice__box" for="question-3N"></label>
-                                </div>
-                            </li>
-                            <div class="questions__additional-info">
-                                Jos yksikin kohta on punaisella, siirry kohtaan ”Estä pahaneminen”
-                            </div>
-                        </ul>
-                    </section>
-                    <section class="page-section">
-                        <h2>Estä paheneminen</h2>
-                        <ul>
-                            <li class="question">
-                                <span class="question__text"> Käytä avaavaa lääkettä riittävästi (ks. ohje alla)</span>
-                                <div class="choice">
-                                    <input type="checkbox" class="choice__input" id="question-4Y" name="question-4">
-                                    <label class="choice__box" for="question-4Y"></label>
-                                </div>
-                            </li>
-                            <li class="question">
-                                <span class="question__text">Aloita inhaloitava kortisoni tai kaksinkertaista käytössä olevan kortisonin annos vähintään viikoksi</span>
-                                <div class="choice">
-                                    <input type="checkbox" class="choice__input" id="question-5Y" name="question-5">
-                                    <label class="choice__box" for="question-5Y"></label>
-                                </div>
-                            </li>
-                            <li class="question">
-                                <span class="question__text">Hakeudu lääkärille/hoitajalle/päivystykseen, jos kotilääkitys ei auta. On huolestuttavaa, jos pikkulapsen henkeä ahdistaa ja hän väsähtää.</span>
-                                <div class="choice">
-                                    <input type="checkbox" class="choice__input" id="question-6Y" name="question-6">
-                                    <label class="choice__box" for="question-6Y"></label>
-                                </div>
-                            </li>
-                            <li class="question">
-                                <span class="question__text">Pahenemisvaiheen jälkeen on tarkistettava lääkärin tai hoitajan kanssa astman perushoidon riittävyys</span>
-                                <div class="choice">
-                                    <input type="checkbox" class="choice__input" id="question-7Y" name="question-7">
-                                    <label class="choice__box" for="question-7Y"></label>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="questions__submit-wrapper">
-                            <button type="submit">Tallenna</button>
-                        </div>
-                    </section>
-                </form>
-                <hr>
-                <section class="page-section">
-                    <h2>Astmakohtauksen tunnistaminen</h2>
-                    <p>
-                        Lapsen lievä astmakohtaus aiheuttaa hengityksen muuttumisen
-                        pinnallisemmaksi ja nopeammaksi. Mitä vaikeampi hengenahdistus,
-                        sitä pitempään uloshengitys kestää. Vinkunaa voi kuulua sekä
-                        ulos- että sisäänhengityksessä.
-                    </p>
-                    <p>
-                        Jos hengenahdistus vaikeutuu, lapsi voi muuttua kalpeaksi ja
-                        pahimmillaan huulet alkavat sinertää. Mitä vaikeampi hengenahdistus
-                        sitä pidempi uloshengityksen kesto. Silloin vinkunaa voi
-                        kuulua sekä ulos- että sisäänhengityksessä. Kylkivälit tulevat
-                        usein selvästi näkyviin, lapsi käyttää voimakkaasti palleaa ja
-                        hengittää raskaasti.
-                    </p>
-                </section>
-                <section class="page-section">
-                    <h2>Astmakohtauksen hoito</h2>
-                    <p>
-                        Anna tilanjatkeella (alle 3-vuotiaalla maskin kanssa) SALBUTAMOLI sumutinta
-                        (0.1 mg) yksi suihke ja anna lapsen hengittää vähintään
-                        viisi kertaa edestakaisin tai 15 sekuntia. Toista sama annos
-                        välittömästi.
-                    </p>
-                    <p>
-                        Mikäli lasta edelleen ahdistaa tai hän yskii, anna 20 min kuluttua
-                        uudelleen kaksi suihketta. Tilanteen jatkuessa, anna 20 minuutin
-                        kuluttua vielä kolmannen kerran kaksi suihketta (yhteensä kuusi
-                        suihketta 40 minuutin aikana).
-                    </p>
-                    <p>
-                        Jos pienen lapsen hengenahdistus ei selvästi helpotu, hakeudu
-                        lääkäriin. Jos tilanne on inhaalatioiden jälkeen selvästi parempi,
-                        annostele jatkossa kaksi suihketta kahden-neljän tunnin välein ja
-                        harvenna annoksia vähitellen oireiden mukaan. Aloita myös
-                        inhaloitava kortisoni tai kaksinkertaista sen annos vähintään
-                        viikoksi.
-                    </p>
-                </section>
+    <body class="login-page">
+        <main class="main-block login-main">
+            <div class="main-wrapper main-wrapper--narrow">
+                <div class="login">
+                    <h1 class="login__title">STOP Allergian ja astman oireet</h1>
+                    <form class="login__form" action="index.html" method="post">
+                        <label for="name">Sähköposti</label>
+                        <input type="text" name="name" id="name">
+                        <label for="password">Salasana</label>
+                        <input type="password" name="password" id="password">
+                        <label class="login__remember-me" for="remember-me">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <span>Muista minut</span>
+                        </label>
+                        <!-- <input type="submit" class="login__submit" value="Kirjaudu sisään"> -->
+                        <a class="button login__submit" href="/pages/astma-lapset.html">Kirjaudu sisään</a>
+                    </form>
+                </div>
             </div>
         </main>
-        <footer class="page-footer">
-            <div class="footer__content main-wrapper">
-                <div class="footer__links">
-                    <div>Lisätietoa:</div>
-                    <a href="http://www.terveyskirjasto.fi/terveyskirjasto/tk.koti?p_artikkeli=dlk00009" target="_blank">Duodecim terveyskirjasto - astma</a>
-                </div>
-                <img class="footer__image" src="images/allergiaohjelma-logo-tp.png" alt="Allergiaohjelman logo" />
-            </div>
-        </footer>
     </body>
 </html>

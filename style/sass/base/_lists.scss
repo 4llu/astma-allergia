@@ -1,8 +1,28 @@
 ul,
 ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding: 0 $base-spacing;
+  font-size: modular-scale(2);
+
+  li {
+      margin-bottom: .25rem;
+  }
+
+  &.neutral {
+      padding: 0;
+      font-size: modular-scale(0);
+
+      li {
+          margin: 0;
+      }
+  }
+}
+
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    font-size: 1em;
 }
 
 dl {

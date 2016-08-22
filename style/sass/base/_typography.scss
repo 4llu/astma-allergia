@@ -24,11 +24,15 @@ h1 {
 
 h2 {
     font-size: modular-scale(3);
+    // color: $blue;
+    // border-left: .5rem solid $blue;
+    // padding-left: .5rem;
 }
 
 .subtitle {
     display: block;
     font-size: modular-scale(1);
+    padding-left: 2.28rem;
     color: tint($base-font-color, 30%);
 }
 
