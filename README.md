@@ -8,3 +8,7 @@ Astma-muistilista
 * UTF-8:
   * Nuha
   * Atooppinen ihottuma
+
+* Numero yksin laidassa
+
+* Urtikari (nokkosrokko)
