@@ -4,6 +4,7 @@
     width: 100%;
     height: $menu-icon-bar-height-small;
     background-color: rgba($background-color, .9);
+    z-index: 9999;
 
     @media all and (min-width: $ml-screen) {
         height: $menu-icon-bar-height;
