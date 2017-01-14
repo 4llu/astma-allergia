@@ -5,7 +5,6 @@
     display: inline-block;
     transform: translate(-5px, 0) rotate(45deg);
     @include size(1.5rem);
-    margin-right: .5rem;
     border-right: $border-width solid $color;
     border-top: $border-width solid $color;
 }
