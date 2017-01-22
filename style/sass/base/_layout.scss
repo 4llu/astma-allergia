@@ -25,6 +25,7 @@ body {
 .main-block {
     margin-bottom: $base-spacing;
     margin-top: $menu-icon-bar-height-small;
+    padding-top: 4px;
 
     @media all and (min-width: $ml-screen) {
         margin-top: $menu-icon-bar-height;
