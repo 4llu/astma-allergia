@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template
+from flask import abort, render_template
 
 app = Flask(__name__)
 
@@ -7,6 +7,9 @@ app = Flask(__name__)
 def index():
     return render_template("index.html", page="index")
 
-@app.route("/ohje/<page>")
+@app.route("/ohjeet/<page>")
 def instructions(page):
-    return render_template(page + ".html", page=page)
+    try:
+        return render_template(page + ".html", page=page)
+    except:
+        abort(404)

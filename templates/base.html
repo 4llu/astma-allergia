@@ -51,9 +51,13 @@
         <!-- CONTENT -->
         <main class="main-block">
             <div class="main-wrapper">
-                {% block header %}
-                {% endblock %}
-                
+                <header class="page-header">
+                    <h1>
+                        <div class="page-heading-accent"></div>
+                        {% block heading %} Heading {% endblock %}
+                    </h1>
+                </header>
+
                 {% block content %}
                 {% endblock %}
             </div>
