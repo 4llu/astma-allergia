@@ -10,45 +10,9 @@
         <script type="text/javascript" src="{{ url_for('static', filename='menu.js') }}"></script>
     </head>
     <body class="info-page">
-        <div class="menu__icon-bar">
-            <div class="menu__icon-wrapper js-menu-trigger">
-                <img class="menu__icon" src="{{ url_for('static', filename='images/menu.svg') }}" alt="Menu" />
-            </div>
-        </div>
-        <nav class="js-menu menu__content">
-            <ul class="neutral">
-                <li>
-                    <a class="menu__link" href="/astma-allergia/index.html">Aikuisen astmaoireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="/astma-allergia/astma-lapset.html">Pikkulapsen astmaoireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="/astma-allergia/nuha.html">Aikuisen allergisen nuhan oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="/astma-allergia/konjunktiviiti.html">Aikuisen allergisen konjunktiviitin oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="/astma-allergia/atooppinen-ihottuma-aikuiset.html">Aikuisen atooppisen ihottuman oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="/astma-allergia/atooppinen-ihottuma-lapset.html">Lapsen atooppisen ihottuman oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="/astma-allergia/urtikaria.html">Urtikarian oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="/astma-allergia/kasi-ihottuma.html">Käsi-ihottuman oireet</a>
-                </li>
-                <li>
-                    <a class="menu__link" href="/astma-allergia/anafylaksia.html">Anafylaksian oireet</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="js-menu-screen menu__fade-screen">
-
-        </div>
+        {% block menu %}
+          menu
+        {% endblock %}
         <main class="main-block">
             <div class="main-wrapper">
                 <header class="page-header">
